@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --blue-deep: #0d1f3c;
+  --blue-mid: #1a3460;
+  --blue-rich: #1e3f75;
+  --blue-light: #2b5299;
+  --blue-pale: #edf2fb;
+  --gold: #c9a84c;
+  --gold-light: #e2c47a;
+  --gold-pale: #fdf6e3;
+  --ivory: #faf8f4;
+  --cream: #f4f0e8;
+  --white: #ffffff;
+  --text: #1a1a2e;
+  --text-mid: #4a4a6a;
+  --text-muted: #9090aa;
+  --border: #e2ddd4;
+  --border-blue: rgba(30, 63, 117, 0.15);
+  --red-accent: #9b2335;
+  --success: #2e7d4f;
+  --warning: #c07a1a;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(13, 31, 60, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: var(--ivory);
+  color: var(--text);
+  font-size: 15px;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
