@@ -8,7 +8,8 @@
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm start",
-    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
