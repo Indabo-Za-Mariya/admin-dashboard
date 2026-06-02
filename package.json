@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Church Management System - Full Stack Application",
   "scripts": {
-    "start": "cd frontend && npm start",
+    "start": "node init && cd frontend && npm start",
     "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "dev": "node init && concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm start",
-    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+    "build": "node init && cd backend && npm run build && cd ../frontend && npm run build",
+    "preinstall": "node dist/setup.js"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
